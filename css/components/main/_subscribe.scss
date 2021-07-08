@@ -1,0 +1,114 @@
+.subscribe {
+  background-size: cover;
+  background: url(../img/subscribe.jpg) no-repeat center;
+  padding: 64px 20px 109px;
+
+  @media (min-width: 1200px) {
+    .container {
+      margin: 0 auto;
+      width: 1140px;
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+
+  .subscribe-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .subscribe-left__text {
+      margin-top: 30px;
+      text-align: center;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      color: #222224;
+      max-width: 330px;
+    }
+  }
+
+  .subscribe-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 65px;
+
+    button {
+      height: inherit;
+      border: none;
+      color: white;
+      font-family: inherit;
+      font-size: 14px;
+      line-height: 17px;
+      background: var(--orange-color);
+      border-top-right-radius: 28px;
+      border-bottom-right-radius: 28px;
+      padding: 0 17px;
+    }
+
+    .subscribe-right__form {
+      height: 47px;
+
+      input {
+        height: inherit;
+        background: #e1e1e1;
+        border: none;
+        padding: 6px 21px;
+        box-sizing: border-box;
+        border-top-left-radius: 28px;
+        border-bottom-left-radius: 28px;
+        float: left;
+        width: 185px;
+      }
+
+      input::-webkit-input-placeholder {
+        color: #222224;
+        font-family: inherit;
+        opacity: 0.67;
+      }
+
+      input::-moz-placeholder {
+        color: #222224;
+        font-family: inherit;
+        opacity: 0.67;
+      }
+
+      input:-ms-input-placeholder {
+        color: #222224;
+        font-family: inherit;
+        opacity: 0.67;
+      }
+
+      input:-moz-placeholder {
+        color: #222224;
+        font-family: inherit;
+        opacity: 0.67;
+      }
+    }
+
+    .subscribe-right__text {
+      font-size: 14px;
+      color: #222224;
+      margin-bottom: 22px;
+    }
+
+    .subscribe-right__title {
+      font-weight: 700;
+      font-size: 24px;
+      color: #222224;
+
+      .subscribe-right__text {
+        max-width: 271px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.subscribe-right__form-button {
+  transition: transform 0.2s;
+  &:hover {
+    transform: scale(1.2);
+  }
+}

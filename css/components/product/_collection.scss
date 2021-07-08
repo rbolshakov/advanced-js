@@ -1,0 +1,111 @@
+.collection {
+  padding: 64px 24px;
+  border: 1px solid #eaeaea;
+  margin-bottom: 64px;
+  @media (min-width: 768px) {
+    margin-bottom: 128px;
+  }
+  @media (min-width: 1600px) {
+    margin-top: -64px;
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+    background: white;
+  }
+  .collection-inside__title {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--orange-color);
+    text-align: center;
+    margin-bottom: 12px;
+    margin-top: 0;
+  }
+
+  .collection-inside__divider-pink {
+    height: 3px;
+    width: 63px;
+    background: var(--orange-color);
+    margin: 0 auto 12px;
+  }
+
+  .collection-inside__heading {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #4d4d4d;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  .collection-inside__text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 143.1%;
+    text-align: center;
+    color: #e5e5e5;
+    margin-bottom: 32px;
+    max-width: 326px;
+    margin-left: auto;
+    margin-right: auto;
+    @media (min-width: 768px) {
+      max-width: 555px;
+    }
+  }
+
+  .collection-inside__price {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 130%;
+    color: var(--orange-color);
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .collection-inside__divider-grey {
+    height: 1px;
+    width: 175px;
+    margin: 0 auto 49px;
+    background: #eaeaea;
+    @media (min-width: 768px) {
+      width: 642px;
+    }
+  }
+  .collection-inside__filters {
+    font-size: 10px;
+    line-height: 12px;
+    color: #6f6e6e;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 64px;
+    max-width: 304px;
+    margin-left: auto;
+    margin-right: auto;
+    img {
+      margin-left: 5px;
+      @media (min-width: 375px) {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .collection-inside__button {
+    background: none;
+    border: 1px solid var(--orange-color);
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--orange-color);
+    display: flex;
+    align-items: center;
+    padding: 15px 24px;
+    margin: 0 auto;
+    background: none;
+    transition: transform 0.2s;
+    &:hover {
+      transform: scale(1.2);
+    }
+
+    img {
+      margin-right: 23px;
+    }
+  }
+}
