@@ -1,0 +1,48 @@
+@import "_variables";
+@import "_fonts";
+@import "_overall";
+
+//header
+@import "components/main/_header";
+
+//brand
+@import "components/main/_brand";
+
+//arrivals
+@import "components/catalog/_arrivals";
+
+//brand-dark
+@import "components/main/_brand-dark";
+
+//featured
+@import "components/main/_featured";
+
+//filters
+@import "components/catalog/_filters";
+
+//footer
+@import "components/main/_footer";
+
+//offers
+@import "components/main/_offers";
+
+//pagination
+@import "components/catalog/_pagination";
+
+//services
+@import "components/main/_services";
+
+//subscribe
+@import "components/main/_subscribe";
+
+//slider
+@import "components/product/_slider";
+
+//collection
+@import "components/product/_collection";
+
+//cart
+@import "components/cart/_cart";
+
+//registration
+@import "components/registration/_registration";
