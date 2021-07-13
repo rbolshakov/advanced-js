@@ -1,0 +1,71 @@
+.arrivals {
+  background: #f8f3f4;
+  min-height: 148px;
+
+  .arrivals-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: inherit;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  .arrivals-title {
+    margin: 50px 0 32px 0;
+    color: var(--orange-color);
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    padding-left: 20px;
+
+    @media (min-width: 768px) {
+      .arrivals-title {
+        margin: 0 16px;
+      }
+    }
+
+    @media (min-width: 1600px) {
+      .arrivals-title {
+        margin: 0;
+      }
+    }
+  }
+
+  .arrivals-nav {
+    @media (min-width: 768px) {
+      margin: 0 16px;
+    }
+
+    @media (min-width: 1600px) {
+      margin: 0;
+    }
+  }
+
+  .arrivals-nav__link {
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+  }
+
+  .araiivals-nav__splitter {
+    color: #636363;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    margin: 0 3px;
+  }
+
+  .arrivals-nav__link:last-child {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--orange-color);
+  }
+}
