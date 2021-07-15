@@ -1,0 +1,166 @@
+.registration {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  @media (max-width: 767px) {
+    padding: 0 8px;
+  }
+
+  @media (min-width: 768px) and (max-width: 1599px) {
+    padding: 0 16px;
+  }
+
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .registration_left {
+    @media (min-width: 768px) and (max-width: 1599px) {
+      margin-right: 22px;
+    }
+    @media (min-width: 1600px) {
+      margin-right: 128px;
+    }
+    .registration_left__label {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 19px;
+      color: #222;
+    }
+    .registration_left__imput {
+      border: 1px solid #a4a4a4;
+      height: 44px;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 12px 16px;
+      font-family: inherit;
+      font-weight: 300;
+      font-size: 13px;
+      line-height: 16px;
+      color: #b1b1b1;
+      margin-top: 19px;
+
+      &::-webkit-input-placeholder {
+        font-family: inherit;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+        color: #b1b1b1;
+      }
+
+      &::-moz-placeholder {
+        font-family: inherit;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+        color: #b1b1b1;
+      }
+
+      &:-ms-input-placeholder {
+        font-family: inherit;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+        color: #b1b1b1;
+      }
+
+      &:-moz-placeholder {
+        font-family: inherit;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+        color: #b1b1b1;
+      }
+    }
+
+    .reigistration_left__gender {
+      margin-top: 31px;
+      margin-bottom: 33px;
+      font-family: inherit;
+      font-weight: 300;
+      font-size: 11px;
+      line-height: 13px;
+      columns: #000;
+      .registration_left__input {
+        margin-right: 10px;
+
+        &:not(:first-of-type) {
+          margin-left: 20px;
+        }
+      }
+    }
+    .registration_left__text {
+      font-weight: 300;
+      font-size: 13px;
+      line-height: 16px;
+      margin-top: 15px;
+      margin-bottom: 39px;
+      font-family: inherit;
+    }
+
+    .registration_left__button {
+      height: 50px;
+      width: 167px;
+      background: var(--orange-color);
+      font-family: inherit;
+      font-size: 14px;
+      color: #fff;
+      line-height: 17px;
+      border: none;
+      transition: transform 0.2s;
+      .registration_left__button-image {
+        margin-left: 20px;
+      }
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  .registration_right {
+    margin-top: 22px;
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 19px;
+    color: #000;
+
+    @media (max-width: 767px) {
+      margin-top: 40px;
+    }
+
+    @media (min-width: 1600px) {
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 29px;
+      color: #000;
+    }
+
+    .registration_right__title {
+      margin-bottom: 32px;
+    }
+
+    .registration_right__text {
+      font-size: 16px;
+      margin-bottom: 22px;
+    }
+
+    .registration_right__list {
+      padding-left: 0;
+      margin: 0;
+      list-style-type: none;
+
+      li {
+        background: url(../img/registration-mark.svg) no-repeat;
+        padding-left: 42px;
+        transition: transform 0.2s;
+        &:hover {
+          transform: scale(1.02);
+        }
+        &:not(:first-child) {
+          margin-top: 16px;
+        }
+      }
+    }
+  }
+}
